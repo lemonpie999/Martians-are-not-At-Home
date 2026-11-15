@@ -1,0 +1,2 @@
+# Proxy para la API de JPL Horizons (lunas en vivo). Netlify reenvia la consulta, con sus parametros, y evita el bloqueo del navegador.
+/api/horizons  https://ssd.jpl.nasa.gov/api/horizons.api  200
