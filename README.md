@@ -1,3 +1,4 @@
+[README.md](https://github.com/user-attachments/files/34887286/README.md)
 # Mars Survival Guide — *Martians Are Not At Home*
 
 A web app about Jezero crater, Mars, in two halves that share the same data:
@@ -36,7 +37,7 @@ Requirements: a browser with WebGL2. `three.js` r128 and `Leaflet` 1.9.4 load fr
 **The radio.** The call sheet is a UHF transceiver. Each contact holds one channel and you only hear the one the dial is on; when somebody calls on another frequency the set flashes, the signal meter rises as you sweep towards them, and `AUTO-SCAN` finds them for you.
 
 | Channel | Who | What for |
-| --- | --- | --- |
+|---|---|---|
 | 401.55 | Alan Korwel, science sub-director | objectives, bearings, what the orbital data says about the ground under you |
 | 404.20 | M.-R. Turner, managing director | mission reports, citations, bonuses |
 | 437.10 | George McKay, maintenance engineer | traction, extraction, chassis repairs |
@@ -63,7 +64,7 @@ Routes planned here can be sent to the game as an expedition.
 The map grid is 1020 × 756 px covering 77.00680°–78.57920° E and 17.89008°–18.99956° N — about 86.8 × 87.1 m per pixel.
 
 | Layer | Source |
-| --- | --- |
+|---|---|
 | Elevation | `M20_JezeroCrater_CTXDEM_20m.tif` — USGS / JPL Mars 2020 CTX DEM mosaic, 20 m/px, heights relative to the MOLA datum. Resampled to the map grid; 99.3% coverage; −3329 m to −486 m. |
 | Thermal inertia | Edwards, C. S., & Buz, J. (2021). *THEMIS-derived Thermal Inertia of Jezero Crater, Mars* (Version 1) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.4931348 — CC BY 4.0. THEMIS / 2001 Mars Odyssey, 100 m/px. 66% coverage; differences under about 20 units are within the uncertainty. |
 | Geology | Sun, V. Z., & Stack, K. M. (2020). *Geologic map of Jezero crater and the Nili Planum region, Mars.* USGS Scientific Investigations Map 3464, 1:75,000. https://doi.org/10.3133/sim3464 — mapped from orbit before Perseverance landed; covers the western half of this map. |
@@ -103,6 +104,23 @@ _redirects    Netlify proxy for the JPL Horizons API
 Each page is self-contained: the elevation model, thermal inertia, geology, mineral map and imagery are embedded as base64 PNG/JPEG, which is why the files are large. They are meant to be served as they are, not bundled.
 
 ---
+
+## AI assistance
+
+Parts of this project were built with AI assistance (Anthropic Claude), declared here, in the `ai-assistance`
+metadata of each HTML file, and on the project submission page.
+
+**Written by the team, without AI:** the concept and the approach to the challenge, the four characters and
+every line of their dialogue, the portrait art, and the direction of every build.
+
+**Built with AI assistance:** the data pipeline that turns the CTX DEM, THEMIS, USGS and CRISM products into
+the embedded layers; the 3D terrain, the continuous crater and the science map; the route planner, autopilot
+and navigation; the radio, the traction-recovery and the camera systems; the interface and the test harness.
+The characters' dialogue was adapted from the team's script into the branching trees the game uses, but the
+words are the team's.
+
+No AI-generated imagery is used anywhere in the project, and no generated content contains NASA branding,
+logos or mission identifiers. Mission names appear only as attribution for the data.
 
 ## Credits
 
